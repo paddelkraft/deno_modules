@@ -40,7 +40,7 @@ async function returnOlle() {
   return "Olle";
 }
 
-async function noWrite(text: string = "") {
+async function noWrite(text = "") {
   return text;
 }
 

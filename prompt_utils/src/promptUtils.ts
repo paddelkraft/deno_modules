@@ -2,7 +2,7 @@ import { PromptWriter } from "./promptWriter.ts";
 import { PromptReader } from "./promptReader.ts";
 
 export async function writeToPrompt(
-  text: string = "",
+  text = "",
   stdout = new PromptWriter(),
 ) {
   return await stdout.write(text);
@@ -13,7 +13,7 @@ export async function getInputFromPrompt(stdin = new PromptReader()) {
 }
 
 export async function ask(
-  question: string = "",
+  question = "",
   _getInputFromPrompt = getInputFromPrompt,
   _writeToPrompt = writeToPrompt,
 ) {

@@ -1,5 +1,5 @@
 export class PromptWriter {
-  private _stdout: any;
+  private _stdout = Deno.stdout;
 
   constructor(stdout = Deno.stdout) {
     this._stdout = stdout;

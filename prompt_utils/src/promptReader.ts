@@ -1,5 +1,5 @@
 export class PromptReader {
-  private _stdin: any;
+  private _stdin = Deno.stdin;
 
   constructor(stdin = Deno.stdin) {
     this._stdin = stdin;
