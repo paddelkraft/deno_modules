@@ -1,4 +1,4 @@
-import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
+import { assertEquals } from "./../test_deps.ts";
 import { PromptWriter } from "./../src/promptWriter.ts";
 
 Deno.test("promptWriter - it should to write to prompt and return value printed", async () => {
