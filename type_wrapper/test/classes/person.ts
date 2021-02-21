@@ -15,8 +15,8 @@ export interface IPerson {
 export class Person implements ITypeWrapper {
 
     constructor(
-        public name: Name,
-        public age: Age
+        public readonly name: Name,
+        public readonly age: Age
     ) {
         this.name = name;
         this.age = age;

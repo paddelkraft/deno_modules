@@ -2,7 +2,7 @@ import { ITypeWrapper } from "./ITypeWrapper.ts";
 
 export abstract class TypeWrapper<T> implements ITypeWrapper {
 
-    public value: T;
+    public readonly value: T;
 
     constructor(value: T) {
         this.value = value;

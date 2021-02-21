@@ -3,7 +3,7 @@ import { Person, IPerson } from './person.ts';
 
 export class PersonArray implements ITypeWrapper {
 
-    public value: Person[];
+    public readonly value: Person[];
     
     constructor(value: Person[] = []) {
         this.value = value;
