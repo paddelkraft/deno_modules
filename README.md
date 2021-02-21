@@ -19,12 +19,10 @@ This repository contains Deno modules that I have created, but they are availabl
 
 - Udated to support longer string to stdout
 
-**[2020.07.26](https://raw.githubusercontent.com/tommardh/deno_modules/2020.07.26/prompt_utils/mod.ts)**
+**[2020.07.26](https://raw.githubusercontent.com/tommardh/deno_modules/2021.07.26/prompt_utils/mod.ts)**
 
 - Initial version
 
 ### type_wrapper
 
-**[2021.02.21](https://raw.githubusercontent.com/tommardh/deno_modules/2020.02.21/type_wrapper/mod.ts)**
-
-- Initial version
+**[2021.02.21](https://raw.githubusercontent.com/tommardh/deno_modules/2021.02.21/type_wrapper/mod.ts)**
