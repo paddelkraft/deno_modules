@@ -26,7 +26,9 @@ For primitive datatype the function look a little different:
 
 > `public static fromJSON(value: T): TypeWrapper<T>`
 
-Examples will be provaded in the usafge section
+Examples will be provaded in the usage section
+
+Please feel free to add more functions in the interface if you would like to increase consinstency in the types by making sure the same methods are available in all types.
 
 ### TypeWrapper class
 
@@ -71,7 +73,7 @@ function name(value: string) {
 Then tha call can be made as
 
 ```typescript
-helloWorld(name(Stina));
+helloWorld(name('Stina'));
 ```
 For completeness reasons I recommend to also provide a static method called fromJSON that opens up this way of creating a Name object.
 
@@ -99,8 +101,8 @@ interface IPerson {
 class Person implements ITypeWrapper {
 
     constructor(
-        public name: Name,
-        public age: Age
+        public readonly name: Name,
+        public readonly age: Age
     ) {
         this.name = name;
         this.age = age;
@@ -135,9 +137,6 @@ function person(value: IPerson) {
 
 ## References
 
-- [Object Calisthenics by Jeff Bay](https://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf) 
-- [Object Calisthenics](https://javflores.github.io/object-calisthenics/)
-- [Object Calisthenics Origin](https://books.google.se/books?id=o4FXLgAACAAJ&dq=%22object+calisthenics%22&hl=en&sa=X&ved=2ahUKEwiBmP38i_buAhXNFXcKHb_IDmAQ6AEwBnoECAcQAg)
-(Article by Jeff Bay published in the book The ThoughtWorks Anthology)
+- [Object Calisthenics by Jeff Bay](https://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf)
 - [tiny-types](https://www.npmjs.com/package/tiny-types) (NPM Module by Jan Molak9
 - [My Deno Modules Read Me File](https://github.com/tommardh/deno_modules)
