@@ -6,7 +6,8 @@ export class PromptWriter {
   }
 
   public async write(text: string) {
-    await Deno.writeAll(this._stdout, new TextEncoder().encode(text));
+    await this._stdout.write( new TextEncoder().encode(text));
     return text;
   }
 }
+
